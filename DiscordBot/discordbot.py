@@ -61,6 +61,7 @@ async def leave(ctx):
 async def play(ctx, url):
     voice_client = client.voice_client_in(ctx.message.server)
     player = await voice_client.create_ytdl_player(url)
+    print(player.volume())
     player.start()
 
 
@@ -153,9 +154,6 @@ async def rate(ctx, name: str, surname: str):
             if char in ("b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"):
                 cons = cons + 1 '''
 
-
-
-
     if len(name) <= 4:
         points = points + 5
     elif len(name) > 4 or len(name) <= 6:
@@ -182,11 +180,6 @@ async def rate(ctx, name: str, surname: str):
         points = 0
 
     await client.say("I'd say " + str(points) + "/10")
-
-'''
-@client.command(pass_context=True, name="say", description="Owner only")
-async def say(ctx):
-    await client.say(msg)'''
 
 if __name__ == "__main__":
     import config

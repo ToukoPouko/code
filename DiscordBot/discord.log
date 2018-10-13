@@ -25,3 +25,47 @@
 2018-10-13 21:33:42,271:DEBUG:discord.client: Dispatching event socket_raw_receive
 2018-10-13 21:33:42,272:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 2018-10-13 21:33:42,272:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:34:23,359:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
+2018-10-13 21:34:23,537:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:34:23,537:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:34:23,537:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:35:04,612:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
+2018-10-13 21:35:04,771:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:35:04,771:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:35:04,771:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:35:45,864:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
+2018-10-13 21:35:46,025:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:35:46,026:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:35:46,026:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:36:05,685:DEBUG:discord.gateway: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 4, 'op': 0, 'd': {'user': {'id': '351756454899744769'}, 'status': 'online', 'roles': ['374860725392244747'], 'nick': None, 'guild_id': '354605266018369536', 'game': {'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}, 'activities': [{'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}]}}
+2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event member_update
+2018-10-13 21:36:27,116:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:36:27,274:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:36:27,275:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:36:27,275:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:37:08,367:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:37:08,531:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:37:08,531:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:37:08,531:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:37:49,619:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:37:49,778:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:37:49,779:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:37:49,779:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:38:30,869:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:38:31,028:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:38:31,028:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:38:31,028:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:39:12,120:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:39:12,281:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:39:12,281:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:39:12,281:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:39:53,372:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:39:53,555:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:39:53,555:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:39:53,555:DEBUG:discord.client: Dispatching event socket_response
+2018-10-13 21:40:34,622:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
+2018-10-13 21:40:34,783:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-13 21:40:34,783:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-13 21:40:34,783:DEBUG:discord.client: Dispatching event socket_response
