@@ -28,6 +28,8 @@ msg = None
 
 tts_state = False
 
+playlist = []
+
 @client.event
 async def on_ready():
     print('Logged in as')
@@ -35,37 +37,50 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-'''
-@client.event
-async def on_message(message):
-    
-    if message.author == client.user:
-        return
-    
-    msg = message
-'''
 
-@client.command(pass_context=True, name="join", description="Join the voice channel the user is currently in", brief="Bot joins the voice channel")
+@client.command(pass_context=True, name="join", description="Join the voice channel the user is currently in")
 async def join(ctx):
     channel = ctx.message.author.voice.voice_channel
     await client.join_voice_channel(channel)
 
 
-@client.command(pass_context=True, name="leave", description="Make the bot leave from the current voice chat it is in", brief="Bot leaves the voice channel")
+@client.command(pass_context=True, name="leave", description="Make the bot leave from the current voice chat it is in")
 async def leave(ctx):
     voice_client = client.voice_client_in(ctx.message.server)
     await voice_client.disconnect()
 
 
-@client.command(pass_context=True, name="play", description="Plays the song given in the voice chat the bot is currently in", brief="Play music wiht YouTube link")
+@client.command(pass_context=True, name="play", description="Plays the song given in the voice chat the bot is currently in")
 async def play(ctx, url):
+    global player
     voice_client = client.voice_client_in(ctx.message.server)
     player = await voice_client.create_ytdl_player(url)
-    print(player.volume())
+    print(player.volume)
     player.start()
 
 
-@client.command(pass_context=True, name="deals", description="Outputs all the games from the subreddit 'GameDeals' with 'free' or '100' tags on them", brief="Check the newest free games on r/GameDeals.")
+@client.command(pass_context=True, name="stop", description="Stops the player")
+async def stop(ctx):
+    player.stop()
+
+
+@client.command(pass_context=True, name="pause", description="Pauses the player")
+async def pause(ctx):
+    player.pause()
+
+
+@client.command(pass_context=True, name="resume", description="Resumes the player's current song")
+async def resume(ctx):
+    player.resume()
+
+
+@client.command(pass_context=True, name="vol", description="Change the volume of the player")
+async def vol(ctx, a: int):
+    player.volume = a / 100
+    print(player.volume)
+
+
+@client.command(pass_context=True, name="deals", description="Outputs all the games from the subreddit 'GameDeals' with 'free' or '100' tags on them")
 async def deals(ctx):
     deals = []
     for submission in reddit.subreddit("gamedeals").hot(limit=50):
@@ -77,12 +92,12 @@ async def deals(ctx):
     await client.say(embed=embed)
     
     
-@client.command(pass_context=True, name="ping", description="Play ping pong with the bot", brief="Ping pong!")
+@client.command(pass_context=True, name="ping", description="Play ping pong with the bot")
 async def ping(ctx):
     await client.say(":ping_pong: Pong!! :ping_pong:")
 
 
-@client.command(pass_context=True, name="info", description="Outputs the mentioned player's name, ID, status and joining date", brief="Check the mentioned player's info")
+@client.command(pass_context=True, name="info", description="Outputs the mentioned player's name, ID, status and joining date")
 async def info(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I found", color=0x00ff00)
     embed.add_field(name="Name", value=user.name, inline=True)
@@ -93,7 +108,7 @@ async def info(ctx, user: discord.Member):
     await client.say(embed=embed)
 
 
-@client.command(pass_context=True, name="serverinfo", description="Outputs the server's author, name, ID, roles and members", brief="Check the server's info")
+@client.command(pass_context=True, name="serverinfo", description="Outputs the server's author, name, ID, roles and members")
 async def serverinfo(ctx):
     embed = discord.Embed(name="{}'s info".format(ctx.message.server.name), description="Here's what I found.", color=0x00ff00)
     embed.set_author(name="Owner: Pixel")
@@ -105,7 +120,7 @@ async def serverinfo(ctx):
     await client.say(embed=embed)
 
 
-@client.command(pass_context=True, name="meme", description="Gives a random dankmeme from the subreddit r/dankmemes", brief="Some dankmemes bruh")
+@client.command(pass_context=True, name="meme", description="Gives a random dankmeme from the subreddit r/dankmemes")
 async def meme(ctx):
     await client.say(reddit.subreddit("dankmemes").random().url)
 
@@ -114,7 +129,7 @@ async def twice(ctx):
     await client.say(reddit.subreddit("twicemedia").random().url)
     
 
-@client.command(pass_context=True, name="num", description="Gives you a random number between the given range", brief="Random number")
+@client.command(pass_context=True, name="num", description="Gives you a random number between the given range")
 async def num(ctx, a: int, b: int):
     r_number = random.randint(a, b)
     await client.say("Your random number is: " + str(r_number))

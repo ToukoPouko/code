@@ -1,71 +1,607 @@
-2018-10-13 21:32:59,951:INFO:discord.client: on_ready has successfully been registered as an event
-2018-10-13 21:32:59,955:INFO:discord.client: logging in using static token
-2018-10-13 21:33:00,408:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me with None has returned 200
-2018-10-13 21:33:00,408:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me has received {'username': 'test-bot', 'verified': True, 'locale': 'en-US', 'mfa_enabled': False, 'bot': True, 'id': '444918107845165066', 'flags': 0, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b', 'discriminator': '4171', 'email': None}
-2018-10-13 21:33:00,430:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway with None has returned 200
-2018-10-13 21:33:00,430:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
-2018-10-13 21:33:00,813:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
-2018-10-13 21:33:00,855:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:33:00,855:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['gateway-prd-main-33kl']}}
-2018-10-13 21:33:00,855:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:33:00,857:INFO:discord.gateway: sent the identify payload to create the websocket
-2018-10-13 21:33:01,048:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:33:01,049:DEBUG:discord.gateway: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'test-bot', 'mfa_enabled': False, 'id': '444918107845165066', 'email': None, 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'session_id': '88a60ce67c3289c4e4b96acf7d387d3b', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '354605266018369536'}], '_trace': ['gateway-prd-main-33kl', 'discord-sessions-prd-1-1']}}
-2018-10-13 21:33:01,049:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:33:01,050:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:33:01,052:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [{'user_id': '351756454899744769', 'suppress': False, 'session_id': '01fe3ed9d3b159b3d076e71034b94983', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '375714438986072064'}], 'verification_level': 0, 'unavailable': False, 'system_channel_id': None, 'splash': None, 'roles': [{'position': 0, 'permissions': 37215297, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '354605266018369536', 'hoist': False, 'color': 0}, {'position': 4, 'permissions': 1341652039, 'name': 'Mods', 'mentionable': True, 'managed': False, 'id': '374860435553517568', 'hoist': True, 'color': 10038562}, {'position': 5, 'permissions': 2146958591, 'name': 'Owner', 'mentionable': True, 'managed': False, 'id': '374860725392244747', 'hoist': True, 'color': 3447003}, {'position': 3, 'permissions': 470281343, 'name': 'test-bot', 'mentionable': False, 'managed': True, 'id': '444918540353536000', 'hoist': False, 'color': 0}, {'position': 2, 'permissions': 2146958591, 'name': 'Bots', 'mentionable': True, 'managed': False, 'id': '444935650324643842', 'hoist': True, 'color': 3447003}, {'position': 1, 'permissions': 1312283713, 'name': 'tiba', 'mentionable': True, 'managed': False, 'id': '474127557219057684', 'hoist': True, 'color': 16711864}], 'region': 'russia', 'presences': [{'user': {'id': '90791683289022464'}, 'status': 'idle', 'game': None, 'activities': []}, {'user': {'id': '342258769838866442'}, 'status': 'idle', 'game': None, 'activities': []}, {'user': {'id': '351756454899744769'}, 'status': 'online', 'game': {'type': 2, 'timestamps': {'start': 1539455409606, 'end': 1539455611616}, 'sync_id': '39GvWlUAF4Y3qzboUyvBkg', 'state': 'TWICE', 'session_id': '01fe3ed9d3b159b3d076e71034b94983', 'party': {'id': 'spotify:351756454899744769'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'Candy Pop', 'created_at': 1539455411362, 'assets': {'large_text': 'Candy Pop', 'large_image': 'spotify:ebc421247e260e1a846bd48e05fbfbbae440f339'}}, 'activities': [{'type': 2, 'timestamps': {'start': 1539455409606, 'end': 1539455611616}, 'sync_id': '39GvWlUAF4Y3qzboUyvBkg', 'state': 'TWICE', 'session_id': '01fe3ed9d3b159b3d076e71034b94983', 'party': {'id': 'spotify:351756454899744769'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'Candy Pop', 'created_at': 1539455411362, 'assets': {'large_text': 'Candy Pop', 'large_image': 'spotify:ebc421247e260e1a846bd48e05fbfbbae440f339'}}, {'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}]}, {'user': {'id': '444918107845165066'}, 'status': 'online', 'game': None, 'activities': []}], 'owner_id': '351756454899744769', 'name': 'Useful Stuff', 'mfa_level': 0, 'members': [{'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, {'user': {'username': 'Antsku', 'id': '90791683289022464', 'discriminator': '0261', 'avatar': '22cf4fc85d28fed4b84f8774a46d1452'}, 'roles': ['374860435553517568'], 'mute': False, 'joined_at': '2018-02-18T18:01:55.926000+00:00', 'deaf': False}, {'user': {'username': 'Munkkiparoni', 'id': '270273193883861001', 'discriminator': '0951', 'avatar': 'd25423565b662e9070c2dfe9b27430df'}, 'roles': ['374860435553517568'], 'nick': 'Naruto', 'mute': False, 'joined_at': '2017-10-31T07:11:27.284000+00:00', 'deaf': False}, {'user': {'username': 'Sugondese nuts', 'id': '342258769838866442', 'discriminator': '0991', 'avatar': '066a24f5e4eadb31514c66343c8bb6fd'}, 'roles': ['374860435553517568'], 'nick': 'Minami Aizawa', 'mute': False, 'joined_at': '2018-05-29T15:41:36.728000+00:00', 'deaf': False}, {'user': {'username': 'Timoteus', 'id': '345075144517222402', 'discriminator': '4007', 'avatar': '60e8142cfdc38613afbf9fd01d8dc65b'}, 'roles': ['474127557219057684'], 'mute': False, 'joined_at': '2017-09-05T12:35:02.163000+00:00', 'deaf': False}, {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, {'user': {'username': 'test-bot', 'id': '444918107845165066', 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'roles': ['444918540353536000', '444935650324643842'], 'nick': 'testbot', 'mute': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'deaf': False}, {'user': {'username': 'PixelTest', 'id': '495637032455110657', 'discriminator': '1382', 'avatar': None}, 'roles': [], 'nick': 'TestAccount', 'mute': False, 'joined_at': '2018-09-29T16:46:11.986000+00:00', 'deaf': False}], 'member_count': 7, 'lazy': True, 'large': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'id': '354605266018369536', 'icon': '274a65d93ca2e9270b9a861b905eb086', 'features': [], 'explicit_content_filter': 0, 'emojis': [{'roles': [], 'require_colons': True, 'name': 'Kappa', 'managed': False, 'id': '379700283434860544', 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'Mindblown', 'managed': False, 'id': '500721321945202705', 'animated': False}], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 457792, 'allow': 0}], 'name': 'welcome', 'last_message_id': '474861461752250378', 'id': '374775990997745664'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [{'type': 'role', 'id': '374860435553517568', 'deny': 8192, 'allow': 0}], 'name': 'general', 'last_pin_timestamp': '2018-07-26T10:52:39.081000+00:00', 'last_message_id': '499284828085157888', 'id': '375714294098034688'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'parent_id': '500720078233534474', 'nsfw': False, 'name': 'voice', 'id': '375714438986072064', 'bitrate': 64000}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 131072, 'allow': 0}], 'name': 'bot_testing', 'last_message_id': '498871300207542272', 'id': '444920641263501322'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 805764177, 'allow': 65536}], 'name': 'links', 'last_message_id': '474861461362049045', 'id': '445126328480694274'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'name': 'twice', 'last_pin_timestamp': '2018-09-15T18:28:51.642000+00:00', 'last_message_id': '498856160158416907', 'id': '471989666799812618'}, {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'jav-star-names', 'last_message_id': '491940999745110018', 'id': '491940988340928523'}, {'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'nsfw', 'id': '495300417916502016', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 5, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': 'funny-vids', 'last_message_id': '500361716803174420', 'id': '500361344957153310'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 8, 'permission_overwrites': [], 'parent_id': '500720078233534474', 'nsfw': False, 'name': 'voice', 'last_message_id': '500734889440706574', 'id': '500720050001674240'}, {'type': 4, 'position': 1, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': 'voice', 'id': '500720078233534474'}], 'application_id': None, 'afk_timeout': 1800, 'afk_channel_id': None}}
-2018-10-13 21:33:01,053:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:33:01,054:DEBUG:discord.client: Dispatching event server_available
-2018-10-13 21:33:03,056:DEBUG:discord.client: Dispatching event ready
-2018-10-13 21:33:29,803:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:33:29,803:DEBUG:discord.gateway: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 3, 'op': 0, 'd': {'user': {'id': '351756454899744769'}, 'status': 'online', 'roles': ['374860725392244747'], 'nick': None, 'guild_id': '354605266018369536', 'game': {'type': 2, 'timestamps': {'start': 1539455608295, 'end': 1539455849143}, 'sync_id': '3yHQKddM8SVCRnuPSo3HPN', 'state': 'BLACKPINK', 'session_id': '01fe3ed9d3b159b3d076e71034b94983', 'party': {'id': 'spotify:351756454899744769'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'BOOMBAYAH', 'created_at': 1539455611271, 'assets': {'large_text': 'SQUARE ONE', 'large_image': 'spotify:119a66360da4b3f446d709b19b4a91b319daaebc'}}, 'activities': [{'type': 2, 'timestamps': {'start': 1539455608295, 'end': 1539455849143}, 'sync_id': '3yHQKddM8SVCRnuPSo3HPN', 'state': 'BLACKPINK', 'session_id': '01fe3ed9d3b159b3d076e71034b94983', 'party': {'id': 'spotify:351756454899744769'}, 'name': 'Spotify', 'id': 'spotify:1', 'flags': 48, 'details': 'BOOMBAYAH', 'created_at': 1539455611271, 'assets': {'large_text': 'SQUARE ONE', 'large_image': 'spotify:119a66360da4b3f446d709b19b4a91b319daaebc'}}, {'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}]}}
-2018-10-13 21:33:29,804:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:33:29,804:DEBUG:discord.client: Dispatching event member_update
-2018-10-13 21:33:42,107:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
-2018-10-13 21:33:42,271:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:33:42,272:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:33:42,272:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:34:23,359:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
-2018-10-13 21:34:23,537:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:34:23,537:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:34:23,537:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:35:04,612:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
-2018-10-13 21:35:04,771:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:35:04,771:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:35:04,771:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:35:45,864:DEBUG:discord.gateway: Keeping websocket alive with sequence 3
-2018-10-13 21:35:46,025:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:35:46,026:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:35:46,026:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:36:05,685:DEBUG:discord.gateway: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 4, 'op': 0, 'd': {'user': {'id': '351756454899744769'}, 'status': 'online', 'roles': ['374860725392244747'], 'nick': None, 'guild_id': '354605266018369536', 'game': {'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}, 'activities': [{'type': 0, 'timestamps': {'start': 1539451512442}, 'name': 'Visual Studio Code', 'id': 'bb4b472902e240d2', 'created_at': 1539451514109}]}}
-2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:36:05,685:DEBUG:discord.client: Dispatching event member_update
-2018-10-13 21:36:27,116:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:36:27,274:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:36:27,275:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:36:27,275:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:37:08,367:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:37:08,531:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:37:08,531:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:37:08,531:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:37:49,619:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:37:49,778:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:37:49,779:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:37:49,779:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:38:30,869:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:38:31,028:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:38:31,028:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:38:31,028:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:39:12,120:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:39:12,281:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:39:12,281:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:39:12,281:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:39:53,372:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:39:53,555:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:39:53,555:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:39:53,555:DEBUG:discord.client: Dispatching event socket_response
-2018-10-13 21:40:34,622:DEBUG:discord.gateway: Keeping websocket alive with sequence 4
-2018-10-13 21:40:34,783:DEBUG:discord.client: Dispatching event socket_raw_receive
-2018-10-13 21:40:34,783:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-2018-10-13 21:40:34,783:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:22,393:INFO:discord.client: on_ready has successfully been registered as an event
+2018-10-14 11:23:22,395:INFO:discord.client: logging in using static token
+2018-10-14 11:23:22,849:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me with None has returned 200
+2018-10-14 11:23:22,850:DEBUG:discord.http: GET https://discordapp.com/api/v6/users/@me has received {'username': 'test-bot', 'verified': True, 'locale': 'en-US', 'mfa_enabled': False, 'bot': True, 'id': '444918107845165066', 'flags': 0, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b', 'discriminator': '4171', 'email': None}
+2018-10-14 11:23:22,876:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway with None has returned 200
+2018-10-14 11:23:22,877:DEBUG:discord.http: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+2018-10-14 11:23:23,300:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+2018-10-14 11:23:23,300:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:23,301:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['gateway-prd-main-bhvf']}}
+2018-10-14 11:23:23,301:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:23,303:INFO:discord.gateway: sent the identify payload to create the websocket
+2018-10-14 11:23:23,519:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:23,521:DEBUG:discord.gateway: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'test-bot', 'mfa_enabled': False, 'id': '444918107845165066', 'email': None, 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'session_id': '274e3e6b82a78182669c71080be6ff91', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '354605266018369536'}], '_trace': ['gateway-prd-main-bhvf', 'discord-sessions-prd-1-28']}}
+2018-10-14 11:23:23,522:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:23,523:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:23,527:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [{'user_id': '351756454899744769', 'suppress': False, 'session_id': 'ffb9e07f8fcaa58f8a5b6d0dca92e4fb', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '375714438986072064'}, {'user_id': '444918107845165066', 'suppress': False, 'session_id': 'faec1567e06bea47105969a8140bc206', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '375714438986072064'}], 'verification_level': 0, 'unavailable': False, 'system_channel_id': None, 'splash': None, 'roles': [{'position': 0, 'permissions': 37215297, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '354605266018369536', 'hoist': False, 'color': 0}, {'position': 4, 'permissions': 1341652039, 'name': 'Mods', 'mentionable': True, 'managed': False, 'id': '374860435553517568', 'hoist': True, 'color': 10038562}, {'position': 5, 'permissions': 2146958591, 'name': 'Owner', 'mentionable': True, 'managed': False, 'id': '374860725392244747', 'hoist': True, 'color': 3447003}, {'position': 3, 'permissions': 470281343, 'name': 'test-bot', 'mentionable': False, 'managed': True, 'id': '444918540353536000', 'hoist': False, 'color': 0}, {'position': 2, 'permissions': 2146958591, 'name': 'Bots', 'mentionable': True, 'managed': False, 'id': '444935650324643842', 'hoist': True, 'color': 3447003}, {'position': 1, 'permissions': 1312283713, 'name': 'tiba', 'mentionable': True, 'managed': False, 'id': '474127557219057684', 'hoist': True, 'color': 16711864}], 'region': 'russia', 'presences': [{'user': {'id': '90791683289022464'}, 'status': 'idle', 'game': None, 'activities': []}, {'user': {'id': '351756454899744769'}, 'status': 'online', 'game': {'type': 0, 'timestamps': {'start': 1539503707415}, 'name': 'Visual Studio Code', 'id': 'b6c5f7e25b08cf0e', 'created_at': 1539503710627}, 'activities': [{'type': 0, 'timestamps': {'start': 1539503707415}, 'name': 'Visual Studio Code', 'id': 'b6c5f7e25b08cf0e', 'created_at': 1539503710627}]}, {'user': {'id': '444918107845165066'}, 'status': 'online', 'game': None, 'activities': []}], 'owner_id': '351756454899744769', 'name': 'Useful Stuff', 'mfa_level': 0, 'members': [{'user': {'username': 'test-bot', 'id': '444918107845165066', 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'roles': ['444918540353536000', '444935650324643842'], 'nick': 'testbot', 'mute': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'deaf': False}, {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, {'user': {'username': 'Antsku', 'id': '90791683289022464', 'discriminator': '0261', 'avatar': '22cf4fc85d28fed4b84f8774a46d1452'}, 'roles': ['374860435553517568'], 'mute': False, 'joined_at': '2018-02-18T18:01:55.926000+00:00', 'deaf': False}, {'user': {'username': 'Munkkiparoni', 'id': '270273193883861001', 'discriminator': '0951', 'avatar': 'd25423565b662e9070c2dfe9b27430df'}, 'roles': ['374860435553517568'], 'nick': 'Naruto', 'mute': False, 'joined_at': '2017-10-31T07:11:27.284000+00:00', 'deaf': False}, {'user': {'username': 'Sugondese nuts', 'id': '342258769838866442', 'discriminator': '0991', 'avatar': '066a24f5e4eadb31514c66343c8bb6fd'}, 'roles': ['374860435553517568'], 'nick': 'Minami Aizawa', 'mute': False, 'joined_at': '2018-05-29T15:41:36.728000+00:00', 'deaf': False}, {'user': {'username': 'Timoteus', 'id': '345075144517222402', 'discriminator': '4007', 'avatar': '60e8142cfdc38613afbf9fd01d8dc65b'}, 'roles': ['474127557219057684'], 'mute': False, 'joined_at': '2017-09-05T12:35:02.163000+00:00', 'deaf': False}, {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, {'user': {'username': 'test-bot', 'id': '444918107845165066', 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'roles': ['444918540353536000', '444935650324643842'], 'nick': 'testbot', 'mute': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'deaf': False}, {'user': {'username': 'PixelTest', 'id': '495637032455110657', 'discriminator': '1382', 'avatar': None}, 'roles': [], 'nick': 'TestAccount', 'mute': False, 'joined_at': '2018-09-29T16:46:11.986000+00:00', 'deaf': False}], 'member_count': 7, 'lazy': True, 'large': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'id': '354605266018369536', 'icon': '274a65d93ca2e9270b9a861b905eb086', 'features': [], 'explicit_content_filter': 0, 'emojis': [{'roles': [], 'require_colons': True, 'name': 'Kappa', 'managed': False, 'id': '379700283434860544', 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'Mindblown', 'managed': False, 'id': '500721321945202705', 'animated': False}], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 457792, 'allow': 0}], 'name': 'welcome', 'last_message_id': '474861461752250378', 'id': '374775990997745664'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [{'type': 'role', 'id': '374860435553517568', 'deny': 8192, 'allow': 0}], 'name': 'general', 'last_pin_timestamp': '2018-07-26T10:52:39.081000+00:00', 'last_message_id': '499284828085157888', 'id': '375714294098034688'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'parent_id': '500720078233534474', 'nsfw': False, 'name': 'voice', 'id': '375714438986072064', 'bitrate': 64000}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 131072, 'allow': 0}], 'name': 'bot_testing', 'last_message_id': '498871300207542272', 'id': '444920641263501322'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 805764177, 'allow': 65536}], 'name': 'links', 'last_message_id': '474861461362049045', 'id': '445126328480694274'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'name': 'twice', 'last_pin_timestamp': '2018-09-15T18:28:51.642000+00:00', 'last_message_id': '498856160158416907', 'id': '471989666799812618'}, {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'jav-star-names', 'last_message_id': '491940999745110018', 'id': '491940988340928523'}, {'user_limit': 0, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'nsfw', 'id': '495300417916502016', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 5, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': 'funny-vids', 'last_message_id': '500361716803174420', 'id': '500361344957153310'}, {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 8, 'permission_overwrites': [], 'parent_id': '500720078233534474', 'nsfw': False, 'name': 'voice', 'last_message_id': '500942221374259211', 'id': '500720050001674240'}, {'type': 4, 'position': 1, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': 'voice', 'id': '500720078233534474'}], 'application_id': None, 'afk_timeout': 1800, 'afk_channel_id': None}}
+2018-10-14 11:23:23,527:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:23,530:DEBUG:discord.client: Dispatching event server_available
+2018-10-14 11:23:25,531:DEBUG:discord.client: Dispatching event ready
+2018-10-14 11:23:40,775:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:40,775:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505420, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:23:40,775:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:40,775:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:23:41,569:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:41,569:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:23:41.475000+00:00', 'pinned': False, 'nonce': '500946787838722048', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500946788312940544', 'embeds': [], 'edited_timestamp': None, 'content': '!join', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:23:41,570:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:41,570:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:23:41,571:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:23:41,571:INFO:discord.client: attempting to join voice channel voice
+2018-10-14 11:23:41,747:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:41,748:DEBUG:discord.gateway: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 5, 'op': 0, 'd': {'member': {'user': {'username': 'test-bot', 'id': '444918107845165066', 'discriminator': '4171', 'bot': True, 'avatar': 'cc0f57409c1f3aef781f8abd77ee6f8b'}, 'roles': ['444918540353536000', '444935650324643842'], 'nick': 'testbot', 'mute': False, 'joined_at': '2018-05-12T17:47:26.209000+00:00', 'deaf': False}, 'user_id': '444918107845165066', 'suppress': False, 'session_id': '274e3e6b82a78182669c71080be6ff91', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '354605266018369536', 'deaf': False, 'channel_id': '375714438986072064'}}
+2018-10-14 11:23:41,748:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:41,749:DEBUG:discord.client: Dispatching event voice_state_update
+2018-10-14 11:23:41,874:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:41,874:DEBUG:discord.gateway: WebSocket Event: {'t': 'VOICE_SERVER_UPDATE', 's': 6, 'op': 0, 'd': {'token': '6fe18f307e1735ae', 'guild_id': '354605266018369536', 'endpoint': 'russia417.discord.gg:80'}}
+2018-10-14 11:23:41,874:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:41,874:INFO:discord.gateway: Unhandled event VOICE_SERVER_UPDATE
+2018-10-14 11:23:41,874:INFO:discord.voice_client: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x039D0C10>}
+2018-10-14 11:23:41,874:INFO:discord.voice_client: voice connection is connecting...
+2018-10-14 11:23:41,905:INFO:discord.voice_client: Voice endpoint found russia417.discord.gg (IP: 213.196.52.68)
+2018-10-14 11:23:42,200:DEBUG:discord.gateway: Voice websocket frame received: {'op': 8, 'd': {'v': 1, 'heartbeat_interval': 55000}}
+2018-10-14 11:23:42,258:DEBUG:discord.gateway: Voice websocket frame received: {'op': 2, 'd': {'ssrc': 19, 'port': 50814, 'modes': ['xsalsa20_poly1305_lite', 'xsalsa20_poly1305_suffix', 'xsalsa20_poly1305'], 'ip': '213.196.52.68', 'heartbeat_interval': 5500}}
+2018-10-14 11:23:42,315:DEBUG:discord.gateway: received packet in initial_connection: b'\x13\x00\x00\x00212.66.221.23\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xcb '
+2018-10-14 11:23:42,316:DEBUG:discord.gateway: detected ip: 212.66.221.23 port: 8395
+2018-10-14 11:23:42,317:DEBUG:discord.gateway: Selected protocol as {'op': 1, 'd': {'protocol': 'udp', 'data': {'address': '212.66.221.23', 'port': 8395, 'mode': 'xsalsa20_poly1305'}}}
+2018-10-14 11:23:42,317:INFO:discord.gateway: selected the voice protocol for use
+2018-10-14 11:23:42,318:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:42,357:DEBUG:discord.gateway: Voice websocket frame received: {'op': 4, 'd': {'video_codec': 'VP8', 'secret_key': [129, 120, 242, 44, 104, 2, 100, 186, 171, 192, 99, 98, 14, 6, 192, 253, 77, 39, 118, 52, 220, 13, 59, 209, 108, 115, 24, 208, 106, 39, 181, 79], 'mode': 'xsalsa20_poly1305', 'media_session_id': 'fe7d52ab654343e7a08305cad1604986', 'audio_codec': 'opus'}}
+2018-10-14 11:23:42,358:INFO:discord.gateway: received secret key for voice connection
+2018-10-14 11:23:42,358:DEBUG:discord.gateway: Voice speaking now set to True
+2018-10-14 11:23:42,358:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:23:42,387:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:42,652:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:43,037:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:43,038:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 7, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505422, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:23:43,038:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:43,039:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:23:43,043:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:43,083:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:43,317:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:43,942:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:44,395:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:46,355:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:46,602:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:47,760:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505427760
+2018-10-14 11:23:47,801:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505427760}
+2018-10-14 11:23:49,506:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:49,752:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:53,260:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505433260
+2018-10-14 11:23:53,302:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505433260}
+2018-10-14 11:23:54,118:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:23:54,118:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:23:54.023000+00:00', 'pinned': False, 'nonce': '500946840556929024', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500946840942936064', 'embeds': [], 'edited_timestamp': None, 'content': '!play 89kTb73csYg', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:23:54,118:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:23:54,119:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:23:54,119:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:23:57,064:INFO:discord.voice_client: playing URL 89kTb73csYg
+2018-10-14 11:23:57,277:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:23:57,278:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:57,494:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:58,084:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:23:58,334:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:23:58,761:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505438761
+2018-10-14 11:23:58,808:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505438761}
+2018-10-14 11:24:04,080:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:04,080:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 9, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505443, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:04,081:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:04,081:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:24:04,262:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505444262
+2018-10-14 11:24:04,312:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505444262}
+2018-10-14 11:24:04,553:DEBUG:discord.gateway: Keeping websocket alive with sequence 9
+2018-10-14 11:24:04,717:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:04,717:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:24:04,717:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:05,560:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:05,561:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 10, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:24:05.469000+00:00', 'pinned': False, 'nonce': '500946888518795264', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500946888950939648', 'embeds': [], 'edited_timestamp': None, 'content': '!vol 1', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:05,561:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:05,561:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:24:05,561:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:24:05,561:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:24:06,369:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:06,369:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 11, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505446, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:06,369:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:06,370:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:24:06,435:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:06,709:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:06,802:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:07,141:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:07,554:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:07,654:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:07,655:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:24:07.556000+00:00', 'pinned': False, 'nonce': '500946897331027968', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500946897704321024', 'embeds': [], 'edited_timestamp': None, 'content': '!vol 10', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:07,655:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:07,655:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:24:07,656:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:24:07,656:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:24:07,830:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:07,952:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:08,208:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:08,215:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:08,215:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 13, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505448, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:08,215:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:08,215:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:24:08,258:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:08,535:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:09,765:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505449765
+2018-10-14 11:24:09,823:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505449765}
+2018-10-14 11:24:14,729:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:14,966:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:15,267:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505455267
+2018-10-14 11:24:15,324:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505455267}
+2018-10-14 11:24:16,117:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:16,580:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:16,656:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:17,079:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:20,295:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:20,769:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505460769
+2018-10-14 11:24:20,810:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505460769}
+2018-10-14 11:24:21,116:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:26,007:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:26,270:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505466270
+2018-10-14 11:24:26,315:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505466270}
+2018-10-14 11:24:26,468:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:26,762:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:27,170:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:27,210:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:27,482:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:27,525:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:27,754:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:28,712:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:29,270:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:31,771:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505471771
+2018-10-14 11:24:31,815:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505471771}
+2018-10-14 11:24:31,856:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:24:32,173:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:24:37,273:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505477273
+2018-10-14 11:24:37,315:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505477273}
+2018-10-14 11:24:42,775:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505482775
+2018-10-14 11:24:42,819:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505482775}
+2018-10-14 11:24:43,153:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:43,153:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 14, 'op': 0, 'd': {'type': 4, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': None, 'nsfw': False, 'name': 'nsfw', 'id': '495300417916502016', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:43,153:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:43,154:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:24:43,154:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:43,154:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 15, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:43,154:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:43,155:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:24:43,155:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:43,155:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 16, 'op': 0, 'd': {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'jav-star-names', 'last_message_id': '491940999745110018', 'id': '491940988340928523', 'guild_id': '354605266018369536'}}
+2018-10-14 11:24:43,155:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:43,155:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:24:45,804:DEBUG:discord.gateway: Keeping websocket alive with sequence 16
+2018-10-14 11:24:45,962:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:24:45,963:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:24:45,963:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:24:48,278:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505488278
+2018-10-14 11:24:48,319:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505488278}
+2018-10-14 11:24:53,779:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505493779
+2018-10-14 11:24:53,821:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505493779}
+2018-10-14 11:24:59,281:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505499281
+2018-10-14 11:24:59,327:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505499281}
+2018-10-14 11:24:59,972:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:25:00,231:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:25:04,782:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505504782
+2018-10-14 11:25:04,825:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505504782}
+2018-10-14 11:25:10,285:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505510285
+2018-10-14 11:25:10,348:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505510285}
+2018-10-14 11:25:15,787:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505515787
+2018-10-14 11:25:15,829:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505515787}
+2018-10-14 11:25:19,715:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:19,715:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_CREATE', 's': 17, 'op': 0, 'd': {'role': {'position': 1, 'permissions': 37215297, 'name': 'new role', 'mentionable': False, 'managed': False, 'id': '500947199962906624', 'hoist': False, 'color': 0}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:19,716:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:19,716:DEBUG:discord.client: Dispatching event server_role_create
+2018-10-14 11:25:21,289:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505521289
+2018-10-14 11:25:21,346:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505521289}
+2018-10-14 11:25:21,387:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:21,387:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 18, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505521, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:21,387:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:21,387:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:25:23,051:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:25:23,412:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:25:26,014:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:25:26,268:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:25:26,791:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505526791
+2018-10-14 11:25:26,833:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505526791}
+2018-10-14 11:25:27,055:DEBUG:discord.gateway: Keeping websocket alive with sequence 18
+2018-10-14 11:25:27,218:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:27,219:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:25:27,219:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:27,626:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:25:28,209:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:25:32,293:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505532293
+2018-10-14 11:25:32,340:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505532293}
+2018-10-14 11:25:34,124:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:25:34,419:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:25:37,796:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505537796
+2018-10-14 11:25:37,855:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505537796}
+2018-10-14 11:25:43,031:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,031:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 19, 'op': 0, 'd': {'role': {'position': 2, 'permissions': 1312283713, 'name': 'tiba', 'mentionable': True, 'managed': False, 'id': '474127557219057684', 'hoist': True, 'color': 16711864}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,032:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,032:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,032:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,032:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 20, 'op': 0, 'd': {'role': {'position': 3, 'permissions': 2146958591, 'name': 'Bots', 'mentionable': True, 'managed': False, 'id': '444935650324643842', 'hoist': True, 'color': 3447003}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,032:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,033:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,033:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,033:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 21, 'op': 0, 'd': {'role': {'position': 4, 'permissions': 470281343, 'name': 'test-bot', 'mentionable': False, 'managed': True, 'id': '444918540353536000', 'hoist': False, 'color': 0}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,033:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,033:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,033:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,034:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 22, 'op': 0, 'd': {'role': {'position': 5, 'permissions': 1341652039, 'name': 'Mods', 'mentionable': True, 'managed': False, 'id': '374860435553517568', 'hoist': True, 'color': 10038562}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,034:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,034:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,034:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,034:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 23, 'op': 0, 'd': {'role': {'position': 6, 'permissions': 2146958591, 'name': 'Owner', 'mentionable': True, 'managed': False, 'id': '374860725392244747', 'hoist': True, 'color': 3447003}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,034:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,035:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,207:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,208:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 24, 'op': 0, 'd': {'role': {'position': 5, 'permissions': 1341652039, 'name': 'Mods', 'mentionable': True, 'managed': False, 'id': '374860435553517568', 'hoist': True, 'color': 2067276}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,208:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,208:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:43,298:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505543298
+2018-10-14 11:25:43,340:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505543298}
+2018-10-14 11:25:43,383:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:25:43,384:DEBUG:discord.gateway: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 25, 'op': 0, 'd': {'role': {'position': 1, 'permissions': 37215297, 'name': 'nsfw', 'mentionable': False, 'managed': False, 'id': '500947199962906624', 'hoist': False, 'color': 10038562}, 'guild_id': '354605266018369536'}}
+2018-10-14 11:25:43,384:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:25:43,384:DEBUG:discord.client: Dispatching event server_role_update
+2018-10-14 11:25:48,800:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505548800
+2018-10-14 11:25:48,842:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505548800}
+2018-10-14 11:25:54,302:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505554302
+2018-10-14 11:25:54,350:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505554302}
+2018-10-14 11:25:59,804:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505559804
+2018-10-14 11:25:59,852:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505559804}
+2018-10-14 11:26:03,219:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:26:03,465:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:26:05,306:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505565306
+2018-10-14 11:26:05,350:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505565306}
+2018-10-14 11:26:08,307:DEBUG:discord.gateway: Keeping websocket alive with sequence 25
+2018-10-14 11:26:08,465:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:08,466:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:26:08,466:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:08,928:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:08,928:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 26, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}, {'type': 'role', 'id': '500947199962906624', 'deny': 0, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:26:08,928:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:08,929:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:26:10,809:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505570809
+2018-10-14 11:26:10,852:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505570809}
+2018-10-14 11:26:14,230:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:14,230:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 27, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:26:14,231:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:14,231:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:26:16,311:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505576311
+2018-10-14 11:26:16,354:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505576311}
+2018-10-14 11:26:21,814:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505581814
+2018-10-14 11:26:21,856:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505581814}
+2018-10-14 11:26:24,357:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:26:24,805:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:26:27,043:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:27,043:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 28, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}, {'type': 'role', 'id': '374860725392244747', 'deny': 0, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:26:27,043:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:27,044:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:26:27,315:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505587315
+2018-10-14 11:26:27,358:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505587315}
+2018-10-14 11:26:32,817:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505592817
+2018-10-14 11:26:32,865:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505592817}
+2018-10-14 11:26:38,318:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505598318
+2018-10-14 11:26:38,360:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505598318}
+2018-10-14 11:26:43,820:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505603820
+2018-10-14 11:26:43,875:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505603820}
+2018-10-14 11:26:47,682:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:26:47,925:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:26:49,180:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:26:49,321:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505609321
+2018-10-14 11:26:49,366:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505609321}
+2018-10-14 11:26:49,559:DEBUG:discord.gateway: Keeping websocket alive with sequence 28
+2018-10-14 11:26:49,719:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:49,720:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:26:49,720:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:49,816:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:26:54,823:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505614823
+2018-10-14 11:26:54,874:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505614823}
+2018-10-14 11:26:55,948:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:26:55,948:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 29, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}, {'type': 'role', 'id': '374860725392244747', 'deny': 66560, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:26:55,948:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:26:55,948:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:00,326:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505620326
+2018-10-14 11:27:00,367:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505620326}
+2018-10-14 11:27:04,983:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:04,983:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 30, 'op': 0, 'd': {'type': 4, 'position': 0, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': 'voice', 'id': '500720078233534474', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:04,983:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:04,983:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:05,004:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:05,005:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 31, 'op': 0, 'd': {'type': 4, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': None, 'nsfw': False, 'name': 'nsfw', 'id': '495300417916502016', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:05,005:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:05,005:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:05,005:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:05,006:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 32, 'op': 0, 'd': {'type': 0, 'topic': '', 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [], 'parent_id': '500720078233534474', 'nsfw': False, 'name': 'voice', 'last_message_id': '500946897704321024', 'id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:05,006:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:05,006:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:05,006:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:05,006:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 33, 'op': 0, 'd': {'type': 0, 'topic': 'Aken stash', 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}, {'type': 'role', 'id': '374860725392244747', 'deny': 66560, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'japaneseporn-id', 'last_pin_timestamp': '2018-10-06T15:32:34.831000+00:00', 'last_message_id': '498155618931310602', 'id': '472046952385871872', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:05,006:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:05,007:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:05,007:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:05,007:DEBUG:discord.gateway: WebSocket Event: {'t': 'CHANNEL_UPDATE', 's': 34, 'op': 0, 'd': {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 8, 'permission_overwrites': [{'type': 'role', 'id': '354605266018369536', 'deny': 871890257, 'allow': 0}], 'parent_id': '495300417916502016', 'nsfw': False, 'name': 'jav-star-names', 'last_message_id': '491940999745110018', 'id': '491940988340928523', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:05,007:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:05,007:DEBUG:discord.client: Dispatching event channel_update
+2018-10-14 11:27:05,827:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505625827
+2018-10-14 11:27:05,869:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505625827}
+2018-10-14 11:27:11,329:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505631329
+2018-10-14 11:27:11,380:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505631329}
+2018-10-14 11:27:16,421:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:16,680:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:16,831:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505636831
+2018-10-14 11:27:16,837:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:16,879:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505636831}
+2018-10-14 11:27:17,629:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:18,021:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:18,021:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 35, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505637, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:18,021:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:18,022:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:27:18,441:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:20,419:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:21,738:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:22,014:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:22,056:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:22,332:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505642332
+2018-10-14 11:27:22,374:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505642332}
+2018-10-14 11:27:22,530:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:23,110:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:23,110:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 36, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:27:23.013000+00:00', 'pinned': False, 'nonce': '500947717128716288', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500947717510660096', 'embeds': [], 'edited_timestamp': None, 'content': '!vol 5', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:23,111:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:23,111:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:27:23,111:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:27:23,112:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:27:27,834:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505647834
+2018-10-14 11:27:27,891:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505647834}
+2018-10-14 11:27:30,665:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:30,666:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 37, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505650, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:30,667:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:30,667:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:27:30,810:DEBUG:discord.gateway: Keeping websocket alive with sequence 37
+2018-10-14 11:27:30,831:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:30,968:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:30,968:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:27:30,968:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:31,185:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:32,446:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:32,984:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:33,040:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:33,239:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:33,331:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:33,337:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505653337
+2018-10-14 11:27:33,395:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505653337}
+2018-10-14 11:27:33,571:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:33,924:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:33,924:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 38, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:27:33.745000+00:00', 'pinned': False, 'nonce': '500947762490114048', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500947762523930651', 'embeds': [], 'edited_timestamp': None, 'content': '!vol 200', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:33,924:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:33,925:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:27:33,925:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:27:33,926:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:27:34,083:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:34,280:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:34,281:DEBUG:discord.gateway: WebSocket Event: {'t': 'TYPING_START', 's': 39, 'op': 0, 'd': {'user_id': '351756454899744769', 'timestamp': 1539505654, 'member': {'user': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'channel_id': '500720050001674240', 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:34,282:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:34,282:DEBUG:discord.client: Dispatching event typing
+2018-10-14 11:27:34,372:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:34,495:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:34,740:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:35,956:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:36,054:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:27:36,054:DEBUG:discord.gateway: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 40, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2018-10-14T08:27:35.955000+00:00', 'pinned': False, 'nonce': '500947771407204352', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['374860725392244747'], 'mute': False, 'joined_at': '2017-09-05T12:34:43.739000+00:00', 'deaf': False}, 'id': '500947771793342475', 'embeds': [], 'edited_timestamp': None, 'content': '!vol 5', 'channel_id': '500720050001674240', 'author': {'username': 'Piiixxxel', 'id': '351756454899744769', 'discriminator': '9938', 'avatar': '274a65d93ca2e9270b9a861b905eb086'}, 'attachments': [], 'guild_id': '354605266018369536'}}
+2018-10-14 11:27:36,054:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:27:36,055:DEBUG:discord.client: Dispatching event message
+2018-10-14 11:27:36,055:DEBUG:discord.client: Dispatching event command
+2018-10-14 11:27:36,055:DEBUG:discord.client: Dispatching event command_completion
+2018-10-14 11:27:36,215:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:37,091:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:37,561:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:37,602:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:37,826:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:38,837:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505658837
+2018-10-14 11:27:38,880:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505658837}
+2018-10-14 11:27:39,147:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:40,155:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:41,303:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:41,555:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:43,530:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:43,827:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:44,341:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505664341
+2018-10-14 11:27:44,383:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505664341}
+2018-10-14 11:27:49,843:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505669843
+2018-10-14 11:27:49,891:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505669843}
+2018-10-14 11:27:55,345:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505675345
+2018-10-14 11:27:55,394:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505675345}
+2018-10-14 11:27:56,063:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:56,321:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:56,886:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:57,143:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:58,248:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:27:58,499:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:27:59,418:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:00,041:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:00,848:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505680848
+2018-10-14 11:28:00,892:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505680848}
+2018-10-14 11:28:06,350:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505686350
+2018-10-14 11:28:06,392:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505686350}
+2018-10-14 11:28:10,369:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:10,612:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:11,853:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505691853
+2018-10-14 11:28:11,896:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505691853}
+2018-10-14 11:28:12,061:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:28:12,220:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:28:12,221:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:28:12,221:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:28:15,961:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:16,508:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:17,355:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505697355
+2018-10-14 11:28:17,368:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:17,410:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505697355}
+2018-10-14 11:28:18,043:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:18,968:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:19,217:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:21,448:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:21,690:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:21,739:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:22,856:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505702856
+2018-10-14 11:28:22,899:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505702856}
+2018-10-14 11:28:23,433:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:28,357:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505708357
+2018-10-14 11:28:28,400:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505708357}
+2018-10-14 11:28:33,860:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505713860
+2018-10-14 11:28:33,903:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505713860}
+2018-10-14 11:28:37,087:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:37,416:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:39,363:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505719363
+2018-10-14 11:28:39,384:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:39,426:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505719363}
+2018-10-14 11:28:39,637:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:39,954:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:40,506:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:40,758:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:41,074:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:41,162:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:41,468:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:41,971:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:42,392:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:43,296:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:43,552:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:44,864:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505724864
+2018-10-14 11:28:44,907:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505724864}
+2018-10-14 11:28:50,366:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505730366
+2018-10-14 11:28:50,407:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505730366}
+2018-10-14 11:28:50,448:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:51,051:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:52,219:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:52,754:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:53,312:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:28:53,471:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:28:53,471:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:28:53,471:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:28:55,396:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:55,677:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:28:55,866:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505735866
+2018-10-14 11:28:55,934:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505735866}
+2018-10-14 11:28:57,996:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:28:58,423:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:01,368:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505741368
+2018-10-14 11:29:01,423:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505741368}
+2018-10-14 11:29:01,498:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:01,774:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:02,497:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:03,022:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:05,519:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:06,274:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:06,871:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505746871
+2018-10-14 11:29:06,914:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505746871}
+2018-10-14 11:29:07,899:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:08,813:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:11,111:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:11,935:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:12,374:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505752374
+2018-10-14 11:29:12,429:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505752374}
+2018-10-14 11:29:13,631:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:14,157:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:17,498:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:17,822:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:17,876:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505757876
+2018-10-14 11:29:17,919:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505757876}
+2018-10-14 11:29:19,433:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:19,712:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:23,378:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505763378
+2018-10-14 11:29:23,420:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505763378}
+2018-10-14 11:29:27,045:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:27,302:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:27,394:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:27,647:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:27,960:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:28,881:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505768881
+2018-10-14 11:29:28,923:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505768881}
+2018-10-14 11:29:29,213:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:34,383:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505774383
+2018-10-14 11:29:34,426:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505774383}
+2018-10-14 11:29:34,563:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:29:34,738:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:29:34,738:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:29:34,738:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:29:39,885:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505779885
+2018-10-14 11:29:39,929:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505779885}
+2018-10-14 11:29:42,832:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:43,071:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:43,403:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:43,862:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:44,202:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:44,453:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:45,388:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505785388
+2018-10-14 11:29:45,431:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505785388}
+2018-10-14 11:29:49,847:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:50,824:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:50,891:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505790891
+2018-10-14 11:29:50,934:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505790891}
+2018-10-14 11:29:56,087:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:56,321:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:56,363:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:56,393:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505796393
+2018-10-14 11:29:56,439:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505796393}
+2018-10-14 11:29:56,571:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:57,017:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:57,265:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:29:58,168:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:29:58,472:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:01,894:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505801894
+2018-10-14 11:30:01,936:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505801894}
+2018-10-14 11:30:07,396:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505807396
+2018-10-14 11:30:07,444:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505807396}
+2018-10-14 11:30:08,452:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:09,495:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:09,604:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:10,785:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:12,898:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505812898
+2018-10-14 11:30:12,955:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505812898}
+2018-10-14 11:30:15,816:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:30:15,986:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:30:15,986:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:30:15,987:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:30:18,400:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505818400
+2018-10-14 11:30:18,441:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505818400}
+2018-10-14 11:30:23,901:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505823901
+2018-10-14 11:30:23,942:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505823901}
+2018-10-14 11:30:24,026:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:24,275:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:29,402:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505829402
+2018-10-14 11:30:29,447:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505829402}
+2018-10-14 11:30:34,903:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505834903
+2018-10-14 11:30:34,944:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505834903}
+2018-10-14 11:30:39,347:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:39,871:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:40,078:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:40,374:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:40,404:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505840404
+2018-10-14 11:30:40,446:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505840404}
+2018-10-14 11:30:40,508:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:30:41,653:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:30:45,905:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505845905
+2018-10-14 11:30:45,961:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505845905}
+2018-10-14 11:30:51,408:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505851408
+2018-10-14 11:30:51,450:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505851408}
+2018-10-14 11:30:56,910:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505856910
+2018-10-14 11:30:56,969:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505856910}
+2018-10-14 11:30:57,068:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:30:57,226:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:30:57,226:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:30:57,226:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:31:02,411:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505862411
+2018-10-14 11:31:02,453:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505862411}
+2018-10-14 11:31:04,657:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:05,134:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:07,914:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505867914
+2018-10-14 11:31:07,958:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505867914}
+2018-10-14 11:31:13,417:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505873417
+2018-10-14 11:31:13,460:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505873417}
+2018-10-14 11:31:16,007:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:16,376:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:16,467:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:17,207:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:18,920:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505878920
+2018-10-14 11:31:18,963:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505878920}
+2018-10-14 11:31:24,423:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505884423
+2018-10-14 11:31:24,485:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505884423}
