@@ -605,3 +605,175 @@
 2018-10-14 11:31:18,963:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505878920}
 2018-10-14 11:31:24,423:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505884423
 2018-10-14 11:31:24,485:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505884423}
+2018-10-14 11:31:29,926:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505889926
+2018-10-14 11:31:29,969:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505889926}
+2018-10-14 11:31:33,923:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:34,241:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:35,429:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505895429
+2018-10-14 11:31:35,489:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505895429}
+2018-10-14 11:31:38,319:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:31:38,478:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:31:38,478:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:31:38,478:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:31:39,911:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:40,437:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:40,931:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505900931
+2018-10-14 11:31:40,975:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505900931}
+2018-10-14 11:31:42,302:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:42,573:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:44,236:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:44,523:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:46,434:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505906434
+2018-10-14 11:31:46,492:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505906434}
+2018-10-14 11:31:47,548:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:48,293:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:49,912:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:51,075:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:51,936:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505911936
+2018-10-14 11:31:51,979:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505911936}
+2018-10-14 11:31:52,826:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:53,314:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:55,756:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:31:56,361:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:31:57,438:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505917438
+2018-10-14 11:31:57,494:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505917438}
+2018-10-14 11:32:00,238:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:00,479:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:00,920:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:01,160:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:02,939:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505922939
+2018-10-14 11:32:02,983:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505922939}
+2018-10-14 11:32:03,822:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:04,093:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:04,547:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:04,830:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:08,442:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505928442
+2018-10-14 11:32:08,485:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505928442}
+2018-10-14 11:32:13,945:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505933945
+2018-10-14 11:32:13,995:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505933945}
+2018-10-14 11:32:19,447:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505939447
+2018-10-14 11:32:19,490:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505939447}
+2018-10-14 11:32:19,570:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:32:19,738:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:32:19,739:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:32:19,739:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:32:20,090:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:20,371:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:20,419:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:20,653:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:22,748:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:23,523:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:23,566:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:24,223:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:24,950:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505944950
+2018-10-14 11:32:25,011:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505944950}
+2018-10-14 11:32:27,218:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:27,575:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:27,831:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:28,410:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:30,453:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505950453
+2018-10-14 11:32:30,497:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505950453}
+2018-10-14 11:32:33,292:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:33,536:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:33,740:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:34,049:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:34,103:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:34,542:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:34,609:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:34,881:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:35,956:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505955956
+2018-10-14 11:32:36,000:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505955956}
+2018-10-14 11:32:37,147:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:37,406:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:37,446:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:37,703:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:39,026:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:39,374:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:40,400:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:40,659:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:41,459:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505961459
+2018-10-14 11:32:41,502:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505961459}
+2018-10-14 11:32:43,990:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:44,244:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:45,631:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:46,136:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:46,891:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:46,961:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505966961
+2018-10-14 11:32:47,002:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505966961}
+2018-10-14 11:32:47,345:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:49,710:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:49,964:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:50,058:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:50,332:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:50,437:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:50,766:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:52,297:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:52,462:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505972462
+2018-10-14 11:32:52,504:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505972462}
+2018-10-14 11:32:52,565:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:52,862:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:53,422:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:54,432:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:54,684:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:54,826:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:55,292:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:55,367:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:56,008:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:56,071:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:56,374:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:32:57,964:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505977964
+2018-10-14 11:32:58,021:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505977964}
+2018-10-14 11:32:59,542:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:32:59,806:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:00,822:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:33:00,993:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:33:00,993:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:33:00,994:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:33:03,465:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505983465
+2018-10-14 11:33:03,506:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505983465}
+2018-10-14 11:33:08,966:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505988966
+2018-10-14 11:33:09,013:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505988966}
+2018-10-14 11:33:14,468:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505994468
+2018-10-14 11:33:14,512:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505994468}
+2018-10-14 11:33:19,971:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539505999971
+2018-10-14 11:33:20,016:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539505999971}
+2018-10-14 11:33:25,471:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506005471
+2018-10-14 11:33:25,519:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506005471}
+2018-10-14 11:33:26,419:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:26,971:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:27,504:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:27,962:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:28,003:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:29,078:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:30,972:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506010972
+2018-10-14 11:33:31,013:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506010972}
+2018-10-14 11:33:33,714:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:34,173:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:34,351:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:34,625:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:36,474:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506016474
+2018-10-14 11:33:36,516:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506016474}
+2018-10-14 11:33:39,039:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:39,314:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:40,999:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:41,258:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:41,976:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506021976
+2018-10-14 11:33:42,031:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506021976}
+2018-10-14 11:33:42,074:DEBUG:discord.gateway: Keeping websocket alive with sequence 40
+2018-10-14 11:33:42,232:DEBUG:discord.client: Dispatching event socket_raw_receive
+2018-10-14 11:33:42,232:DEBUG:discord.gateway: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2018-10-14 11:33:42,232:DEBUG:discord.client: Dispatching event socket_response
+2018-10-14 11:33:45,848:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:46,111:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:47,478:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506027478
+2018-10-14 11:33:47,520:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506027478}
+2018-10-14 11:33:47,960:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:48,201:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:49,523:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:49,801:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:50,055:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': True}}
+2018-10-14 11:33:50,340:DEBUG:discord.gateway: Voice websocket frame received: {'op': 5, 'd': {'user_id': '351756454899744769', 'ssrc': 1, 'speaking': False}}
+2018-10-14 11:33:52,978:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506032978
+2018-10-14 11:33:53,020:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506032978}
+2018-10-14 11:33:58,480:DEBUG:discord.gateway: Keeping voice websocket alive with timestamp 1539506038480
+2018-10-14 11:33:58,535:DEBUG:discord.gateway: Voice websocket frame received: {'op': 3, 'd': 1539506038480}
