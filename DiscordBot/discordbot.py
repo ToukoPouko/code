@@ -28,7 +28,14 @@ msg = None
 
 tts_state = False
 
-#playlist = []
+playlist = []
+
+
+while True:
+    global player
+    if player.is_done() == True:
+
+
 
 @client.event
 async def on_ready():
@@ -55,9 +62,8 @@ async def play(ctx, url):
     global player
     voice_client = client.voice_client_in(ctx.message.server)
     player = await voice_client.create_ytdl_player(url)
-    print(player.volume)
     player.start()
-
+    
 
 @client.command(pass_context=True, name="stop", description="Stops the player")
 async def stop(ctx):
@@ -195,6 +201,8 @@ async def rate(ctx, name: str, surname: str):
         points = 0
 
     await client.say("I'd say " + str(points) + "/10")
+
+
 
 if __name__ == "__main__":
     import config
