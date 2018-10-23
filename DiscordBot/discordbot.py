@@ -29,12 +29,8 @@ msg = None
 tts_state = False
 
 playlist = []
-
-
-while True:
-    global player
-    if player.is_done() == True:
-
+current = None
+player = None
 
 
 @client.event
@@ -57,12 +53,21 @@ async def leave(ctx):
     await voice_client.disconnect()
 
 
-@client.command(pass_context=True, name="play", description="Plays the song given in the voice chat the bot is currently in")
+@client.command(pass_context=True, name="play", description="Starts the queue")
 async def play(ctx, url):
     global player
+    
+    playlist.append(url)
     voice_client = client.voice_client_in(ctx.message.server)
     player = await voice_client.create_ytdl_player(url)
+    #playlist.remove(playlist[0])
+    player.volume = 0.1
     player.start()
+
+@client.command(pass_context=True, name="addsong", description="Add song to the current queue")
+async def addsong(ctx, url):
+    playlist.append(url)
+    print(playlist)
     
 
 @client.command(pass_context=True, name="stop", description="Stops the player")
@@ -202,7 +207,19 @@ async def rate(ctx, name: str, surname: str):
 
     await client.say("I'd say " + str(points) + "/10")
 
+'''
+@asyncio.coroutine
+def playsong(ctx, song):
+    voice_client = client.voice_client_in(ctx.message.server)
+    player = await voice_client.create_ytdl_player(url, after=lambda: nextsong(ctx))
+    playlist.remove(playlist[0])
+    player.volume = 0.35
+    player.start()
 
+def nextsong(ctx):
+    player.stop()
+    playsong()
+'''
 
 if __name__ == "__main__":
     import config
