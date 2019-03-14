@@ -1,8 +1,8 @@
 import win32gui, time, numpy, pyautogui, sys
-#from tkinter import *
+from tkinter import *
 
 
-'''
+
 window = Tk()
 window.title("Bomba Timer")
 window.geometry("300x300")
@@ -12,7 +12,7 @@ lblTime = Label(window, text="40.000")
 lblTime.grid(column=1, row=1)
 
 window.mainloop()
-'''
+
 correct = [234, 65, 65]
 defusetime = 39.89999
 
@@ -38,8 +38,7 @@ def timer():
         current_time = 40 + (start_time - time.time())
         sys.stdout.flush()
         print(round(current_time, 5))
-        #lblTime.configure(text=str(round(current_time, 2)))
-        #window.mainloop()
+        lblTime.configure(text=str(round(current_time, 2)))
         if current_time <= 0:
             break
     check()
