@@ -1,0 +1,3 @@
+Juho,17,Alajärvi
+Petteri,30,Helsinki
+Juuso,25,Oulu
