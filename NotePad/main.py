@@ -1,6 +1,13 @@
 from tkinter import *
 from tkinter.font import Font
 
+
+def messagebox():
+    popup = Tk()
+    popup.wm_title("!")
+    label = Label(popup, text="Do you want to save \"Untitled 1\" ")
+
+
 class MyApp(Frame):
     def __init__(self, master, *args, **kwargs):
         
@@ -8,7 +15,7 @@ class MyApp(Frame):
         
         self.master = master 
 
-        self.master.title("NotePad")
+        self.master.title("Untitled - Notebad")
 
         self.toolbar = Frame(self.master, bg="#eee")
         self.toolbar.pack(side="top", fill="both")
@@ -18,7 +25,7 @@ class MyApp(Frame):
 
         self.bold_font = Font(family="Times New Roman", size=12, weight="bold")  (bold)'''
 
-        self.normal_font = Font(family="Linux Biolinum G", size=13)
+        self.normal_font = Font(family="Linux Biolinum G", size=13)  
 
         self.text = Text(self.master, font=self.normal_font, background="#212121", foreground="lightgreen", insertbackground="lightgreen")
         self.text.focus()
@@ -41,7 +48,12 @@ class MyApp(Frame):
         menu.add_cascade(label="File", menu=file)
 
     def new_file(self):
-        return
+        if self.text.get("1.0", "end") == "\n":
+            self.text.delete("1.0", "end")
+            self.master.title("Untitled - Notebad")
+        elif self.text.get("1.0", "end") != "\n":
+            return
+        
 
     def open_file(self):
         return
@@ -70,9 +82,14 @@ class MyApp(Frame):
 
 
 
-root = Tk()
-root.configure
-root.geometry("500x500")
 
-app = MyApp(root)
-root.mainloop()
+def main():
+    root = Tk()
+    root.configure
+    root.geometry("500x500")
+
+    app = MyApp(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
