@@ -1,11 +1,8 @@
 from tkinter import *
 from tkinter.font import Font
-
-
-def messagebox():
-    popup = Tk()
-    popup.wm_title("!")
-    label = Label(popup, text="Do you want to save \"Untitled 1\" ")
+from tkinter.filedialog import *
+from tkinter.messagebox import *
+import os
 
 
 class MyApp(Frame):
@@ -36,29 +33,46 @@ class MyApp(Frame):
         #self.btnCheckTags = Button(self.toolbar, text="Check Tags", command=self.check_tags)
         #self.btnCheckTags.pack(side="left")
 
+        self.file = None
+
         menu = Menu(self.master)
         self.master.config(menu=menu)
 
         file = Menu(menu)
-        file.add_command(label="New File", command=self.new_file)
-        file.add_command(label="Open File", command=self.open_file)
-        file.add_command(label="Save File", command=self.save_file)       
+        file.add_command(label="New File", command=self.newFile)
+        file.add_command(label="Open File", command=self.openFile)
+        file.add_command(label="Save File", command=self.saveFile)       
         file.add_command(label="Exit", command=self.window_exit)
 
         menu.add_cascade(label="File", menu=file)
 
-    def new_file(self):
-        if self.text.get("1.0", "end") == "\n":
-            self.text.delete("1.0", "end")
+    def newFile(self):
+        '''if self.file != None:
+            self.saveFile()
+        elif self.file == None:
             self.master.title("Untitled - Notebad")
-        elif self.text.get("1.0", "end") != "\n":
-            return
-        
+            self.file = None
+            self.text.delete("1.0", "end")'''
+        self.master.title("Untitled - Notebad")
+        self.file = None
+        self.text.delete("1.0", "end")
 
-    def open_file(self):
-        return
+    def openFile(self):
+        self.file = askopenfilename(defaultextension=".txt", filetypes=[("All Files", "*.*"), ("Text Documents", "*.txt")])
 
-    def save_file(self):
+        if self.file == "":
+            self.file = None
+        else:
+            self.master.title(os.path.basename(self.file) + " - Notebad")
+            self.text.delete("1.0", "end")
+
+            file = open(self.file, "r")
+
+            self.text.insert("1.0", file.read())
+
+            file.close()
+
+    def saveFile(self):
         return
 
     def make_bold(self):  
@@ -78,11 +92,6 @@ class MyApp(Frame):
     def window_exit(self):
         exit()
         
-
-
-
-
-
 def main():
     root = Tk()
     root.configure
@@ -90,6 +99,7 @@ def main():
 
     app = MyApp(root)
     root.mainloop()
+    
 
 if __name__ == "__main__":
     main()
