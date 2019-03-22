@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter.font import Font
 from tkinter.filedialog import *
 from tkinter.messagebox import *
-import os
+import os, io
 
 
 class MyApp(Frame):
@@ -66,11 +66,9 @@ class MyApp(Frame):
             self.master.title(os.path.basename(self.file) + " - Notebad")
             self.text.delete("1.0", "end")
 
-            file = open(self.file, "r")
+            with io.open(self.file, "r", encoding="utf8") as file:
+                self.text.insert("1.0", file.read())
 
-            self.text.insert("1.0", file.read())
-
-            file.close()
 
     def saveFile(self):
         return
