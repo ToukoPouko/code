@@ -14,6 +14,8 @@ class MyApp(Frame):
 
         self.master.title("Untitled - Notebad")
 
+        self.defaultdir = "/"
+
         self.toolbar = Frame(self.master, bg="#eee")
         self.toolbar.pack(side="top", fill="both")
 
@@ -26,69 +28,102 @@ class MyApp(Frame):
 
         self.text = Text(self.master, font=self.normal_font, background="#212121", foreground="lightgreen", insertbackground="lightgreen")
         self.text.focus()
-        self.text.pack(fill="both", expand=True)
-
-        #self.text.tag_configure("BOLD", font=self.bold_font)
-
-        #self.btnCheckTags = Button(self.toolbar, text="Check Tags", command=self.check_tags)
-        #self.btnCheckTags.pack(side="left")
+        self.text.pack(fill="both", expand=True) 
 
         self.file = None
+        
+        self.fileList = [""]
+
+        self.var = StringVar(self.master)
+        self.var.set(self.fileList[0])
+        self.var.trace("w", self.openFileCurrentDir)
+
+        
 
         menu = Menu(self.master)
         self.master.config(menu=menu)
 
         file = Menu(menu)
-        file.add_command(label="New File", command=self.newFile)
-        file.add_command(label="Open File", command=self.openFile)
-        file.add_command(label="Save File", command=self.saveFile)       
+        file.add_command(label="New", command=self.newFile)
+        file.add_command(label="Open", command=self.openFile)
+        file.add_command(label="Open Directory", command=self.openDir)
+        file.add_command(label="Save", command=self.saveFile)       
         file.add_command(label="Exit", command=self.window_exit)
 
         menu.add_cascade(label="File", menu=file)
 
     def newFile(self):
-        '''if self.file != None:
-            self.saveFile()
-        elif self.file == None:
-            self.master.title("Untitled - Notebad")
-            self.file = None
-            self.text.delete("1.0", "end")'''
+        self.saveFile()
         self.master.title("Untitled - Notebad")
         self.file = None
         self.text.delete("1.0", "end")
 
+    def openDir(self):
+        self.defaultdir = askdirectory()
+        if self.defaultdir == "":
+            self.defaultdir = "/"
+
+        for f in os.listdir(self.defaultdir):
+            if f.endswith(".txt"):
+                self.fileList.append(self.defaultdir + "/" + f)
+                print(f)
+        
+        self.fileOptionMenu = OptionMenu(self.master, self.var, *self.fileList)
+        self.fileOptionMenu.pack()
+
+        self.updateOm()
+
+    def updateOm(self):
+        menu = self.fileOptionMenu["menu"]
+        menu.delete(0, "end")
+
+        for item in self.fileList:
+            menu.add_command(label=item, command=lambda value=item: self.var.set(value))
+
     def openFile(self):
-        self.file = askopenfilename(defaultextension=".txt", filetypes=[("All Files", "*.*"), ("Text Documents", "*.txt")])
+        self.file = askopenfilename(defaultextension=".txt", filetypes=[("Text Documents", "*.txt"), ("All Files", "*.*")])
 
         if self.file == "":
             self.file = None
-        else:
-            self.master.title(os.path.basename(self.file) + " - Notebad")
+        else:        
             self.text.delete("1.0", "end")
 
+            try:
+                with io.open(self.file, "r", encoding="utf8") as file:
+                    self.text.insert("1.0", file.read())
+                    self.master.title(os.path.basename(self.file) + " - Notebad")
+            except:
+                self.file = None
+                
+
+    def openFileCurrentDir(self, *args):
+        print(self.var.get())
+        self.text.delete("1.0", "end")
+        self.file = self.var.get()
+
+        try:
             with io.open(self.file, "r", encoding="utf8") as file:
-                self.text.insert("1.0", file.read())
+                    self.text.insert("1.0", file.read())
+                    self.master.title(os.path.basename(self.file) + " - Notebad")
+        except:
+            self.file = None
+
 
 
     def saveFile(self):
-        return
+        if self.file == None:
+            self.file = asksaveasfilename(defaultextension = ".txt", initialdir = self.defaultdir, title = "Select file", filetypes = [("Text Documents", "*.txt"), ("All Files", "*.*")])
+        if self.file != "":
+            with io.open(self.file, "w", encoding = "utf8") as file:
+                file.write(self.text.get("1.0", "end"))
+                self.master.title(os.path.basename(self.file) + " - Notebad")
+        elif self.file == "":
+            self.file = None
+            
 
-    def make_bold(self):  
-        try:
-            if "BOLD" in self.text.tag_names():
-                print("yeet1")
-                self.text.tag_remove("BOLD", "1.0", "end")
-            elif not "BOLD" in self.text.tag_names():
-                self.text.tag_add("BOLD", "sel.first", "sel.last")
-                print("yeet2")
-        except TclError:
-            pass
-
-    def check_tags(self):
-        print(self.text.tag_names("BOLD"))
 
     def window_exit(self):
-        exit()
+        self.master.quit()
         
 def main():
     root = Tk()
