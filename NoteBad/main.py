@@ -24,7 +24,7 @@ class MyApp(Frame):
 
         self.bold_font = Font(family="Times New Roman", size=12, weight="bold")  (bold)'''
 
-        self.normal_font = Font(family="Linux Biolinum G", size=13)  
+        self.normal_font = Font(family="Linux Biolinum G", size=16)  
 
         self.text = Text(self.master, font=self.normal_font, background="#212121", foreground="lightgreen", insertbackground="lightgreen")
         self.text.focus()
