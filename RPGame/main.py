@@ -15,9 +15,14 @@ def init():
 
     sh, sw = screen.getmaxyx()
     w = curses.newwin(sh, sw, 0, 0)
+
+    curses.noecho()
+    curses.cbreak()
+    screen.keypad(True)
+
     #w.keypad(1)
 
-    update()
+    #update()
 
 
 def update():
@@ -48,6 +53,8 @@ def update():
     mainMenu()
 
 def mainMenu():
+    global bh, bw
+    
     w.clear()
 
     bh = int(sh/3)
@@ -64,7 +71,9 @@ def mainMenu():
     cButtons = mMenuBtns
 
     w.refresh()
-    input()
+    time.sleep(2)
+    return
+    
 
 mMenuBtns = [
     "Play",
@@ -81,14 +90,50 @@ zombie = enemy.Enemy("Zombie", 60, 10, 10, 10)
 cEnemy = zombie
 cButtons = []
 
+
+
 cursorLocation = 1
+
+k = 0
+
+init()
+mainMenu()
+
+print("aaa")
 
 while True:
     
-    k = 0
-    
+    print(k)
+
     if len(cButtons) == 4:
         # Arrow Down
-        if k == curses.KEY_DOWN and 
+        if k == curses.KEY_DOWN or k == curses.KEY_UP:
+            if cursorLocation == 1:
+                cursorLocation = 3
+            elif cursorLocation == 2:
+                cursorLocation = 4
+            elif cursorLocation == 3:
+                cursorLocation = 1
+            elif cursorLocation == 4:
+                cursorLocation = 2
+
+        if k == curses.KEY_LEFT or k == curses.KEY_RIGHT:
+            if cursorLocation == 1:
+                cursorLocation = 2
+            elif cursorLocation == 2:
+                cursorLocation = 1
+            elif cursorLocation == 3:
+                cursorLocation = 4
+            elif cursorLocation == 4:
+                cursorLocation = 3
+
+        if cursorLocation == 1:
+            w.addstr(bh, 28 * bw, ">>")
+        
+        w.refresh()
+
+        time.sleep(2)
 
     k = screen.getch()
+
+    
